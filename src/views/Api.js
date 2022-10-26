@@ -18,15 +18,15 @@ function TableList() {
   const [blist, setBlist] = useState([]); //법정동api
 
   useEffect(() => {
-    fetch("http://localhost:8080/v1/api001/001.do", {method: "GET"})
-    .then((res) => res.json())
-    // .catch((error) => console.log(error))
-    .then(res => {
-      console.log(res.response.body.items.item)
-      setList(res.response.body.items.item);
-    });
-  }, [])
-  
+    fetch("http://localhost:8080/v1/api001/001.do", { method: "GET" })
+      .then((res) => res.json())
+      // .catch((error) => console.log(error))
+      .then((res) => {
+        console.log(res.response.body.items.item);
+        setList(res.response.body.items.item);
+      });
+  }, []);
+
   // useEffect(() => {
   //   fetch("http://localhost:8080/v1/api001/adr.do", {method: "GET"})
   //   .then((res2) => res2.json())
@@ -36,7 +36,7 @@ function TableList() {
   //    setBlist(res2.response.body.items.item);
   //   });
   // }, []);
-  
+
   return (
     <>
       <Container fluid>
@@ -147,15 +147,16 @@ function TableList() {
                     </tr>
                   </thead>
                   <tbody>
-                    {list.length > 0 && list.map((item, index) => (
-                      <tr>
-                        <td>{item["거래금액"]}</td>
-                        <td>{item["건축년도"]}</td>
-                        <td>{item["법정동"]}</td>
-                        <td>{item["아파트"]}</td>
-                        <td>{item["도로명"]}</td>
-                      </tr>
-                    ))}
+                    {list.length > 0 &&
+                      list.map((item, index) => (
+                        <tr>
+                          <td>{item["거래금액"]}</td>
+                          <td>{item["건축년도"]}</td>
+                          <td>{item["법정동"]}</td>
+                          <td>{item["아파트"]}</td>
+                          <td>{item["도로명"]}</td>
+                        </tr>
+                      ))}
                   </tbody>
                 </Table>
               </Card.Body>
