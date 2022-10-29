@@ -14,7 +14,7 @@ import {
   Col,
 } from "react-bootstrap";
 
-function TableList() {
+function FifaMatch() {
   const [list, setList] = useState([]);
   const [match, setMatch] = useState({});
 
@@ -219,4 +219,4 @@ function TableList() {
   );
 }
 
-export default TableList;
+export default FifaMatch;
