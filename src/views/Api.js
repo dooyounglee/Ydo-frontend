@@ -32,6 +32,11 @@ function TableList() {
   //   .then((res2) => res2.json())
   //   // .catch((error) => console.log(error))
   //   .then(res2 => {
+
+  //     console.log('법정동api test');
+  //     console.log('법정동api test22');
+  //     console.log('법정동 : ' + res2.response)
+
   //    console.log('법정동 : ' + res2.response.body.items.item)
   //    setBlist(res2.response.body.items.item);
   //   });
@@ -49,20 +54,21 @@ function TableList() {
                   Here is a subtitle for this table
                 </p>
                 {/* 주소 검색 */}
-                {/* https://juso.dev/docs/reg-code-api/ */}
+                {/* https://juso.dev/docs/reg-code-api/#headline-14 */}
+                {/* https://www.code.go.kr/stdcode/regCodeL.do */}
                 <form>
                   <Row>
                       <div class="pr-1 col-md-3">
                         <label>시/도</label>
-                          <select  class="form-control">
+                          {/* <select  class="form-control">
                             <option>test1</option>
                             <option>test2</option>
-                          </select>
-                        {/* <select  class="form-control">
+                          </select> */}
+                        <select  class="form-control">
                           {blist.length > 0 && blist.map((item, index) => (
                             <option>{item["시도코드"]}</option>
                           ))}
-                        </select> */}
+                        </select>
                       </div>
                       <div class="px-1 col-md-3">
                         <label>시/군/구</label>
