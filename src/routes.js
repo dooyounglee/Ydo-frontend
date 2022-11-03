@@ -1,4 +1,4 @@
-/*!
+/*
 
 =========================================================
 * Light Bootstrap Dashboard React - v2.0.1
@@ -23,6 +23,8 @@ import Icons from "views/Icons.js";
 import Maps from "views/Maps.js";
 import Notifications from "views/Notifications.js";
 import Api from "views/Api.js";
+import FifaMatch from "views/FifaMatch.js";
+import FifaMeta from "views/FifaMeta.js";
 import Upgrade from "views/Upgrade.js";
 
 const dashboardRoutes = [
@@ -32,64 +34,78 @@ const dashboardRoutes = [
     name: "Upgrade to PRO",
     icon: "nc-icon nc-alien-33",
     component: Upgrade,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/dashboard",
     name: "Dashboard",
     icon: "nc-icon nc-chart-pie-35",
     component: Dashboard,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/user",
     name: "User Profile",
     icon: "nc-icon nc-circle-09",
     component: UserProfile,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/table",
     name: "Table List",
     icon: "nc-icon nc-notes",
     component: TableList,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/typography",
     name: "Typography",
     icon: "nc-icon nc-paper-2",
     component: Typography,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/icons",
     name: "Icons",
     icon: "nc-icon nc-atom",
     component: Icons,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/maps",
     name: "Maps",
     icon: "nc-icon nc-pin-3",
     component: Maps,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/notifications",
     name: "Notifications",
     icon: "nc-icon nc-bell-55",
     component: Notifications,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/api",
     name: "Api",
     icon: "nc-icon nc-send",
     component: Api,
-    layout: "/admin"
-  }
+    layout: "/admin",
+  },
+  {
+    path: "/fifa-match",
+    name: "Fifa-Match",
+    icon: "nc-icon nc-controller-modern",
+    component: FifaMatch,
+    layout: "/admin",
+  },
+  {
+    path: "/fifa-meta",
+    name: "Fifa-Meta",
+    icon: "nc-icon nc-attach-87",
+    component: FifaMeta,
+    layout: "/admin",
+  },
 ];
 
 export default dashboardRoutes;
